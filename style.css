@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-family: sans-serif;
+}
+
+/*--------MENU----------*/
+
+#sidebar {
+    position: fixed;
+    width: 250px;
+    background-color: dimgrey;
+    left: -250px;
+    top: 15px;
+    border-radius: 7px;
+    
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 1.5s;
+}
+
+#sidebar.active {
+    left: 20px;
+}
+
+#sidebar ul li:first-child {
+    text-align: center;
+    color: white;
+    font-size: 2.1em;
+    list-style: none;
+    padding: 25px 10px 10px 10px;
+}
+
+#sidebar ul li:not(:first-child) {
+    width: 90%;
+    margin-left: 10%;
+    font-size: 1.3em;
+    list-style: none;
+    padding: 15px 10px;
+}
+
+#sidebar ul li a {
+    color: #dfe5eb;
+    text-decoration: none;
+    padding: 7px;
+}
+
+#sidebar ul li a:hover {
+    background-color: crimson;
+    border-radius: 25px;
+    color: #fafafa;
+    transition: 0.7s;
+}
+
+/*----------BUTTON---------*/
+
+#sidebar .toggle-btn {
+    position: absolute;
+    left: 270px;
+    top: 20px;
+    padding: 10px;
+    border-radius: 12px;
+    cursor: pointer;
+    background: #E0E5EA;
+}
+
+#sidebar .toggle-btn span {
+    display: block;
+    width: 25px;
+    height: 4px;
+    background-color: #666;
+    margin: 4px 0;
+}
+
+#sidebar .toggle-btn:hover {
+    background-color: crimson;
+    transition: 0.4s;
+}
+
